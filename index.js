@@ -13,9 +13,11 @@ function increaseRankBy(n){
   }
 }
 
-function deepestChild(){
-  const list = document.getElementById('app').querySelectorAll('ul.ranked-list li')
-  for (let i= 0; i < list.length; i++) {
-    list[i].innerHTML = (i+1).toString()
-  }
+function deepestChild() {
+  const el4 = document.querySelectorAll("#grand-node div");
+  if (!el4.length){
+    return false; 
+  } else {
+      return el4[el4.length -1];
+    }
 }
