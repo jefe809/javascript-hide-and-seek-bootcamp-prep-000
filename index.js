@@ -1,4 +1,4 @@
 function getFirstSelector(string){
-  document.getElementsByTagName(string)[0];
-  return string;
+  return document.getElementsByTagName(string)[0];
+ 
 }
